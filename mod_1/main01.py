@@ -74,3 +74,18 @@
 c = float(input('Введите градусыы Цельсия'))
 result = (c * 9/5) + 32
 print(result)
+
+
+def convert_to_hours_minutes_seconds(seconds):
+    hours = seconds // 3600
+    minutes = (seconds % 3600) // 60
+    seconds = (seconds %3600) % 60
+    return hours, minutes, seconds
+
+def time_to_midnight(current_time_in_seconds):
+    time_to_midnight_in_seconds = 86400 - current_time_in_seconds
+    return convert_to_hours_minutes_seconds(time_to_midnight_in_seconds)
+
+current_time_in_seconds = int(input("Enter time in seconds: "))
+hours, minutes, seconds = time_to_midnight(current_time_in_seconds)
+print(f"There are {hours} hours, {minutes} minutes and {seconds} seconds until midnight.")
