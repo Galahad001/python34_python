@@ -228,15 +228,15 @@ except ArithmeticError:
 
 print('-------------')
 # Ошибки можно присвоить переменным с помощью as
-# try:
-#     x = 1 / 0
-# except Exception as test:
-#     print(test)
+try:
+    x = 1 / 0
+except Exception as test:
+    print(test)
 
-# try:
-#     raise ValueError('Ошибка некоретного значениня')
-# except ValueError as t:
-#     print(t)
+try:
+    raise ValueError('Ошибка некоретного значениня')
+except ValueError as t:
+    print(t)
 
 
 
@@ -276,7 +276,7 @@ print('-------------')
 
 
 # Циклы бывают вложеные друг в друга
-for i in range(1, 11):
-    print()
-    for j in range(1, 11):
-        print(f'{i} * {j} =', i*j)
+# for i in range(1, 11):
+#     print()
+#     for j in range(1, 11):
+#         print(f'{i} * {j} =', i*j)
