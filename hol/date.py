@@ -154,7 +154,7 @@ print(datetime_as_datetime, type(datetime_as_datetime))
 
 
 
-''''
+'''
 from datetime import datetime, date
 
 def timedelta_days(datetime_str_1, datetime_str_2):
